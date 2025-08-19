@@ -16,69 +16,83 @@ export default function Page() {
 
   return (
     <div className="container-fluid py-3">
-
       {/* Primary Stats */}
       <div className="row g-3">
+        
         {/* AUM Card */}
         <div className="col-12 col-lg-6">
-          <div className="card metric-card h-100 shadow-sm border-0 hover-card">
-            <div className="card-body d-flex align-items-center justify-content-between">
-              <div>
-                <div className="title mb-1 text-secondary">Current</div>
-                <div className="d-flex align-items-end">
-                  <div className="value display-5 fw-bold text-primary">AUM 12.19</div>
-                  <div className="unit ms-1 text-muted fs-5">Cr</div>
-                </div>
-                <div className="trend mt-2 text-success">
-                  <i className="fa-solid fa-caret-up me-1"></i>+0.77% MoM
-                </div>
-                <Button
-                  variant="link"
-                  className="link-success small mt-1 p-0"
+          <div className="card metric-card shadow-sm border rounded-3 h-100 position-relative">
+            <div className="card-body">
+              
+              {/* Top Right Report Button */}
+              <Button
+                variant="outline-danger"
+                size="sm"
+                className="position-absolute top-0 end-0 m-2"
+                onClick={handleShowReport}
+              >
+                View Report
+              </Button>
+
+              {/* Main Content */}
+              <p className="text-center text-muted small mb-1 fw-bold">Current</p>
+              <h4 className="text-center fw-bold mb-0">
+                AUM <span className="text-dark">12.19</span>
+                <span className="ms-1 text-muted fs-6">Cr</span>
+              </h4>
+              <p className="text-center text-success small mt-1 mb-0">
+                ▲ +0.77% MoM
+              </p>
+
+              {/* Bottom Right Trend Button */}
+              <div className="d-flex justify-content-end mt-2">
+                <Button 
+                  variant="link" 
+                  className="p-0 text-decoration-none text-success fw-semibold small"
                   onClick={handleShowTrend}
                 >
                   View Trend →
                 </Button>
               </div>
-              <Button
-                variant="outline-primary"
-                size="sm"
-                onClick={handleShowReport}
-              >
-                View Report
-              </Button>
             </div>
           </div>
         </div>
 
         {/* SIP Card */}
         <div className="col-12 col-lg-6">
-          <div className="card metric-card h-100 shadow-sm border-0 hover-card">
-            <div className="card-body d-flex align-items-center justify-content-between">
-              <div>
-                <div className="title mb-1 text-secondary">Current</div>
-                <div className="d-flex align-items-end">
-                  <div className="value display-5 fw-bold text-primary">SIP 1.39</div>
-                  <div className="unit ms-1 text-muted fs-5">Lakh</div>
-                </div>
-                <div className="trend mt-2 text-success">
-                  <i className="fa-solid fa-caret-up me-1"></i>+0% MoM
-                </div>
-                <Button
-                  variant="link"
-                  className="link-success small mt-1 p-0"
+          <div className="card metric-card shadow-sm border rounded-3 h-100 position-relative">
+            <div className="card-body">
+              
+              {/* Top Right Report Button */}
+              <Button
+                variant="outline-danger"
+                size="sm"
+                className="position-absolute top-0 end-0 m-2"
+                onClick={handleShowReport}
+              >
+                View Report
+              </Button>
+
+              {/* Main Content */}
+              <p className="text-center text-muted small mb-1 fw-bold">Current</p>
+              <h4 className="text-center fw-bold mb-0">
+                SIP <span className="text-center text-dark">1.39</span>
+                <span className="text-center ms-1 text-muted fs-6">Lakh</span>
+              </h4>
+              <p className="text-center text-success small mt-1 mb-0">
+                ▲ +0% MoM
+              </p>
+
+              {/* Bottom Right Trend Button */}
+              <div className="d-flex justify-content-end mt-2">
+                <Button 
+                  variant="link" 
+                  className="p-0 text-decoration-none text-success fw-semibold small"
                   onClick={handleShowTrend}
                 >
                   View Trend →
                 </Button>
               </div>
-              <Button
-                variant="outline-primary"
-                size="sm"
-                onClick={handleShowReport}
-              >
-                View Report
-              </Button>
             </div>
           </div>
         </div>

@@ -151,7 +151,6 @@ export default function ClientsChart() {
           data={bubbleData}
           options={bubbleOptions}
           title="Clients"
-          subtitle="Online, New, Active, Inactive"
           reportButton
         />
       </div>
@@ -163,7 +162,6 @@ export default function ClientsChart() {
           data={sipData}
           options={sipOptions}
           title="SIP Business Chart"
-          subtitle="Monthly SIP Data"
           reportButton
         />
       </div>
@@ -175,7 +173,6 @@ export default function ClientsChart() {
           data={misData}
           options={misOptions}
           title="Monthly MIS"
-          subtitle="Revenue vs Expenses"
           reportButton
         />
       </div>
