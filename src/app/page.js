@@ -26,10 +26,14 @@ export default function Page() {
               
               {/* Top Right Report Button */}
               <Button
-                variant="outline-danger"
                 size="sm"
                 className="position-absolute top-0 end-0 m-2"
                 onClick={handleShowReport}
+                style={{
+                  backgroundColor: "#ffe5e5", // हल्का लाल background
+                  color: "red",
+                  borderColor: "red",
+                }}
               >
                 View Report
               </Button>
@@ -65,10 +69,14 @@ export default function Page() {
               
               {/* Top Right Report Button */}
               <Button
-                variant="outline-danger"
                 size="sm"
                 className="position-absolute top-0 end-0 m-2"
                 onClick={handleShowReport}
+                style={{
+                  backgroundColor: "#ffe5e5", // हल्का लाल background
+                  color: "red",
+                  borderColor: "red",
+                }}
               >
                 View Report
               </Button>

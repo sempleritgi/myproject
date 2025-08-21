@@ -33,7 +33,18 @@ export default function ChartCard({
             <p className="text-muted small mb-0">{subtitle}</p>
           </div>
           {reportButton && (
-            <button className="btn btn-sm btn-primary">
+            <button
+              className="btn btn-sm"
+              style={{
+                backgroundColor: "#ffe5e5", // halka red background
+                color: "red",
+                borderColor: "red",
+                border: "1px solid red",
+                borderRadius: "6px",
+                padding: "5px 12px",
+                fontWeight: "500",
+              }}
+            >
               View Report
             </button>
           )}

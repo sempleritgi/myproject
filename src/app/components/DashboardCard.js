@@ -64,7 +64,15 @@ export default function DashboardCard() {
                 <div className="d-flex flex-column">
                   {/* View Report button above title */}
                   {m.report && (
-                    <Button variant="outline-danger" size="sm" className="mb-1">
+                    <Button
+                      size="sm"
+                      className="mb-1"
+                      style={{
+                        backgroundColor: "#f8d7da", // halka red background
+                        color: "#dc3545", // red text
+                        border: "1px solid #f5c2c7"
+                      }}
+                    >
                       View Report
                     </Button>
                   )}
